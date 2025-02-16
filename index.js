@@ -1,10 +1,19 @@
-import { Client, GatewayIntentBits } from 'discord.js'
+import { Client, GatewayIntentBits, ActivityType} from 'discord.js'
 import pushBabel from './pushBabel.js'
 
 import dotenv from 'dotenv'
 dotenv.config()
 
-const client = new Client({intents: [
+const client = new Client({
+	presence: {
+		status: 'online',
+		afk: false,
+		activities: [{
+			name: `RPG`,
+			type: ActivityType.Playing
+		}]
+	},
+	intents: [
 		GatewayIntentBits.Guilds,
 		GatewayIntentBits.GuildMessages,
 		GatewayIntentBits.MessageContent
