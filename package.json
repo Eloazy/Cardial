@@ -1,0 +1,21 @@
+{
+  "name": "Cardial",
+  "version": "1.0.0",
+  "description": "A discordBot who connect to Babel system to generate RPG Text games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eloazy",
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
